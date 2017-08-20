@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kow-Tl-N1v">
+                                <rect key="frame" x="115" y="58" width="135" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="查看Doc目录下文件"/>
+                                <connections>
+                                    <action selector="achieveDirectory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QkJ-Ej-hiC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="McO-qM-Kkg">
+                                <rect key="frame" x="135" y="96" width="92" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="删除所有文件"/>
+                                <connections>
+                                    <action selector="deleteAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VTN-hH-1NZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPc-1A-WLr">
+                                <rect key="frame" x="138" y="20" width="89" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="获取Doc目录"/>
+                                <connections>
+                                    <action selector="achDocAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8pJ-bj-xNP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFF-Pb-YLa">
+                                <rect key="frame" x="16" y="240" width="77" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="创建空目录"/>
+                                <connections>
+                                    <action selector="createFolderAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WSU-IL-yI2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFF-al-Uxc">
+                                <rect key="frame" x="16" y="202" width="133" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="计算 数组.plist 大小"/>
+                                <connections>
+                                    <action selector="fileSizeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7hQ-tC-FJI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6F7-ee-ior">
+                                <rect key="frame" x="16" y="126" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="写文件"/>
+                                <connections>
+                                    <action selector="writeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cu1-7u-fCk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEo-8E-wHt">
+                                <rect key="frame" x="16" y="164" width="62" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="创建文件"/>
+                                <connections>
+                                    <action selector="createFileAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c6q-qY-cEI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dys-Ve-lE4">
+                                <rect key="frame" x="236" y="202" width="123" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="计算所有文件大小"/>
+                                <connections>
+                                    <action selector="folderSizeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eg1-kC-s1U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUz-A1-FOS">
+                                <rect key="frame" x="190" y="240" width="169" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="移动所有文件到创建目录"/>
+                                <connections>
+                                    <action selector="moveAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w4S-eE-u2j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWy-Zp-sxJ">
+                                <rect key="frame" x="313" y="126" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="读文件"/>
+                                <connections>
+                                    <action selector="readAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ON3-Qh-U0Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uk8-I0-ijr">
+                                <rect key="frame" x="236" y="164" width="123" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="创建文件是否存在"/>
+                                <connections>
+                                    <action selector="judgeExistAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P7e-PL-4Dv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZEo-8E-wHt" firstAttribute="leading" secondItem="cFF-al-Uxc" secondAttribute="leading" id="0KL-Gv-kml"/>
+                            <constraint firstItem="cFF-al-Uxc" firstAttribute="top" secondItem="McO-qM-Kkg" secondAttribute="bottom" constant="76" id="5LL-VH-5tp"/>
+                            <constraint firstItem="WPc-1A-WLr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="67e-Og-j19"/>
+                            <constraint firstItem="6F7-ee-ior" firstAttribute="baseline" secondItem="FWy-Zp-sxJ" secondAttribute="baseline" id="9Mf-dk-vu0"/>
+                            <constraint firstItem="cFF-al-Uxc" firstAttribute="top" secondItem="ZEo-8E-wHt" secondAttribute="bottom" constant="8" symbolic="YES" id="GJy-IO-Kly"/>
+                            <constraint firstItem="WPc-1A-WLr" firstAttribute="centerX" secondItem="kow-Tl-N1v" secondAttribute="centerX" id="GWb-hd-YfF"/>
+                            <constraint firstItem="6F7-ee-ior" firstAttribute="leading" secondItem="ZEo-8E-wHt" secondAttribute="leading" id="Gc6-kn-D4X"/>
+                            <constraint firstItem="AFF-Pb-YLa" firstAttribute="baseline" secondItem="cUz-A1-FOS" secondAttribute="baseline" id="Hyo-xA-URL"/>
+                            <constraint firstItem="WPc-1A-WLr" firstAttribute="trailing" secondItem="McO-qM-Kkg" secondAttribute="trailing" id="L72-G9-Pd7"/>
+                            <constraint firstItem="kow-Tl-N1v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="99" id="Lo9-N3-huJ"/>
+                            <constraint firstItem="6F7-ee-ior" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="MzR-6l-kY2"/>
+                            <constraint firstItem="FWy-Zp-sxJ" firstAttribute="trailing" secondItem="Uk8-I0-ijr" secondAttribute="trailing" id="NUG-6I-W98"/>
+                            <constraint firstItem="cFF-al-Uxc" firstAttribute="leading" secondItem="AFF-Pb-YLa" secondAttribute="leading" id="RMc-zG-UAn"/>
+                            <constraint firstItem="Uk8-I0-ijr" firstAttribute="leading" secondItem="dys-Ve-lE4" secondAttribute="leading" id="SUH-EC-YEl"/>
+                            <constraint firstItem="cFF-al-Uxc" firstAttribute="baseline" secondItem="dys-Ve-lE4" secondAttribute="baseline" id="Zfg-tX-8rg"/>
+                            <constraint firstItem="ZEo-8E-wHt" firstAttribute="baseline" secondItem="Uk8-I0-ijr" secondAttribute="baseline" id="afl-1L-6mX"/>
+                            <constraint firstItem="AFF-Pb-YLa" firstAttribute="top" secondItem="cFF-al-Uxc" secondAttribute="bottom" constant="8" symbolic="YES" id="fKR-YL-uAd"/>
+                            <constraint firstItem="ZEo-8E-wHt" firstAttribute="top" secondItem="6F7-ee-ior" secondAttribute="bottom" constant="8" symbolic="YES" id="hiX-OW-DCl"/>
+                            <constraint firstItem="FWy-Zp-sxJ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="iAN-7g-LFF"/>
+                            <constraint firstItem="McO-qM-Kkg" firstAttribute="top" secondItem="kow-Tl-N1v" secondAttribute="bottom" constant="8" symbolic="YES" id="nbU-fe-T9f"/>
+                            <constraint firstItem="kow-Tl-N1v" firstAttribute="top" secondItem="WPc-1A-WLr" secondAttribute="bottom" constant="8" symbolic="YES" id="tNd-F7-hvd"/>
+                            <constraint firstItem="dys-Ve-lE4" firstAttribute="trailing" secondItem="cUz-A1-FOS" secondAttribute="trailing" id="xSI-Yn-sbB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
+        </scene>
+    </scenes>
+</document>
